@@ -2,7 +2,7 @@
 const router = require('express').Router();
 const store = require('../db/store');
 
-//reads db.json file and returns saved notes
+//reads db.json file using getNotes function in store.js and returns saved notes
 router.get ('/api/notes', (req, res)=>{
     store
         .getNotes()
@@ -12,7 +12,7 @@ router.get ('/api/notes', (req, res)=>{
         .catch((err)=>res.status(500).json(err))
 });
 
-//receives new note, adds to db.json file, and returns to client
+//receives new note using addNote function in store, adds to db.json file, and returns to client
 router.post ('/api/notes', (req,res)=>{
     store
         .addNote(req.body)

@@ -18,6 +18,7 @@ class Store {
         return writeFileAsync('db/db.json', JSON.stringify(note))
     }
 
+    //function for reading db.json and returning saved notes 
     getNotes() {
         return this.read().then((notes) => {
             let parsedNotes;
@@ -30,21 +31,25 @@ class Store {
             return parsedNotes;
         });
     }
+
+    //function for receiving a new note
     addNote(note) {
         const { title, text } = note;
-        if(!title || !text){
+        if (!title || !text) {
             throw new Error('note title and note text cannot be blank');
         }
         const newNote = { title, text, id: uuidv1() };
         return this.getNotes()
-            .then((notes)=>[...notes, newNote])
-            .then((updatedNotes)=>this.write(updatedNotes))
-            .then(()=>newNote)
+            .then((notes) => [...notes, newNote])
+            .then((updatedNotes) => this.write(updatedNotes))
+            .then(() => newNote)
     }
+
+    //function for deleting a note with a specific id 
     removeNote(id) {
         return this.getNotes()
-            .then((notes)=>notes.filter((note)=>note.id !== id))
-            .then((filteredNotes)=>this.write(filteredNotes))
+            .then((notes) => notes.filter((note) => note.id !== id))
+            .then((filteredNotes) => this.write(filteredNotes))
     }
 }
 
