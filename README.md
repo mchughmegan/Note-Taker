@@ -46,6 +46,7 @@ The user can click on a note in the list to view that note later.
 
 If the user chooses to delete a note, they can click the trash bin icon.
 
+![Delete](https://github.com/mchughmegan/Note-Taker/blob/main/public/assets/images/delete.png)
 
 ## Credits
 
