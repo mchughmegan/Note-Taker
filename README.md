@@ -3,7 +3,7 @@
 
 ## Description
 
-This project uses node.js to create a Note Taker app. The user will be able to save multiple notes to view later, and delete them when they are no longer needed. Technologies used include the express and uuid packages.
+Welcom to the Note Taker app. The user will be able to save multiple notes to view later, and delete them when they are no longer needed. Technologies used include node js and the express and uuid packages.
 
 ## Table of Contents
 
@@ -34,13 +34,9 @@ The user will enter the Note Taking Page where they will see a place for Note Ti
 
 ![Note Page](https://github.com/mchughmegan/Note-Taker/blob/main/public/assets/images/note%20taking%20page.png)
 
-Once the user has entered their desired title and text, they will be able to save the note for later or add a new note. 
+Once the user has entered their desired title and text, they will be able to save the note for later ![Save](https://github.com/mchughmegan/Note-Taker/blob/main/public/assets/images/Save%20Note.png) or add a new note. ![New](https://github.com/mchughmegan/Note-Taker/blob/main/public/assets/images/New%20Note.png)
 
 ![Entered title and text](https://github.com/mchughmegan/Note-Taker/blob/main/public/assets/images/Note%20Title%20and%20List.png)
-
-![Save](https://github.com/mchughmegan/Note-Taker/blob/main/public/assets/images/Save%20Note.png)
-
-![New](https://github.com/mchughmegan/Note-Taker/blob/main/public/assets/images/New%20Note.png)
 
 The user can click on a note in the list to view that note later.
 
