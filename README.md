@@ -3,7 +3,7 @@
 
 ## Description
 
-Welcom to the Note Taker app. The user will be able to save multiple notes to view later, and delete them when they are no longer needed. Technologies used include node js and the express and uuid packages.
+Welcome to the Note Taker app. The user will be able to save multiple notes to view later, and delete them when they are no longer needed. Technologies used include node js and the express and uuid packages.
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ npm i uuid
 
 ## Usage
 
-When the user first enters the site, they will be need to click on the Get Started button to write their first note.
+When the user first enters the site, https://note-taker-102822.herokuapp.com/, they will be need to click on the Get Started button to write their first note.
 
 ![Enter Site](https://github.com/mchughmegan/Note-Taker/blob/main/public/assets/images/enter%20site.png)
 
